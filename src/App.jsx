@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { BrowserRouter,Routes, Route  } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchDataFromApi } from "./utils/api";
 import { getApiConfiguration } from "./store/homeSlice";
@@ -14,7 +14,7 @@ import PageNotFound from "./pages/404/PageNotFound";
 
 function App() {
   const dispatch = useDispatch();
-  const {data} = useSelector((store) => store.home);
+  const { data } = useSelector((store) => store.home);
 
   useEffect(() => {
     apiTesting();
@@ -22,18 +22,23 @@ function App() {
 
   const apiTesting = () => {
     fetchDataFromApi("/movie/popular").then((res) => {
-      console.log('res',res);
+      console.log("res", res);
       dispatch(getApiConfiguration(res));
     });
   };
 
   return (
-    <>
-      <div style={{ color: "white" }} className="App">
-        App
-        {data?.total_pages}
-      </div>
-    </>
+    <BrowserRouter>
+      <Header />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/:mediaType/:id" element={<Details />} />
+        <Route path="/search/:query" element={<SearchResult />} />
+        <Route path="/explore/:mediaType" element={<Explore />} />
+        <Route path="*" element={<PageNotFound />} />
+      </Routes>
+      <Footer />
+    </BrowserRouter>
   );
 }
 
