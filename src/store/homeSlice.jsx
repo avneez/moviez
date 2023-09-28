@@ -3,12 +3,12 @@ import { createSlice } from "@reduxjs/toolkit";
 export const homeSlice = createSlice({
   name: "home",
   initialState: {
-    data: {},
+    url: {},
     genres: {},
   },
   reducers: {
     getApiConfiguration: (state, action) => {
-      state.data = action.payload;
+      state.url = action.payload;
     },
     getGenres: (state, action) => {
       state.genres = action.payload;
