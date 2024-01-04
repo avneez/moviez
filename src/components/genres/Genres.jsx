@@ -11,11 +11,12 @@ const Genres = ({genresData}) => {
             {genresData?.map((genre) => {
                 if(!genres[genre]?.name) return;
                 return (
-                    <div className="genre">
+                    <div key={genre?.id} className="genre">
                         {genres[genre]?.name}
                     </div>
                 )
-            })}</div>
+            })}
+        </div>
     )
 }
 
