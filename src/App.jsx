@@ -14,7 +14,6 @@ import PageNotFound from "./pages/404/PageNotFound";
 
 function App() {
   const dispatch = useDispatch();
-  // const { data } = useSelector((state) => state.home);
 
   useEffect(() => {
     fetchApiConfig();
@@ -23,7 +22,6 @@ function App() {
 
   const fetchApiConfig = () => {
     fetchDataFromApi("/configuration").then((res) => {
-      // console.log("res", res);
 
       const url = {
         backdrop: res.images.secure_base_url + "original",
@@ -33,7 +31,7 @@ function App() {
 
       dispatch(getApiConfiguration(url));
     });
-  };
+  };  
 
   const genresCall = async () => {
     let promises = [];
