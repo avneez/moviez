@@ -6,7 +6,7 @@ import { fetchDataFromApi } from "../../utils/api";
 import ContentWrapper from "../../components/contentWrapper/ContentWrapper";
 import MovieCard from "../../components/movieCard/MovieCard";
 import Spinner from "../../components/spinner/Spinner";
-import noResults from "../../assets/no-results.png";
+import noResults from "../../assets/noResults.png";
 
 
 
@@ -85,6 +85,7 @@ const SearchResult = () => {
           ) : (
             <span className="resultNotFound">
               Sorry, Results not found!
+              <img src={noResults} alt="no-result" />
             </span>
           )}
         </ContentWrapper>
