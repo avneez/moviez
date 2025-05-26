@@ -12,7 +12,9 @@ const MovieCard = ({ data, fromSearch, mediaType }) => {
     const { url } = useSelector((state) => state.home);
     const navigate = useNavigate();
     const isFallback = localStorage.getItem('fallbackData')==='true'
-    const posterUrl = !isFallback ? url?.poster + data.poster_path : data?.poster_path
+    const isExploreUrl = window.location.pathname.includes('/explore')
+
+    const posterUrl = !isFallback ? url?.poster + data.poster_path : isExploreUrl ? "https://image.tmdb.org/t/p/original" + data?.poster_path : data?.poster_path
 
     return (
         <div
