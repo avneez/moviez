@@ -9,7 +9,7 @@ const headers = {
 
 export const fetchDataFromApi = async (url, params = {}) => {
   const controller = new AbortController();
-  const timeout = setTimeout(() => controller.abort(), 400);
+  const timeout = setTimeout(() => controller.abort(), 3000);
 
   try {
     const response = await axios.get(BASE_URL + url, {
@@ -35,8 +35,8 @@ export const fetchDataFromApi = async (url, params = {}) => {
         "/mocks/trending-movie-week.json",
         "/mocks/movie-popular.json",
         "/mocks/tv-popular.json",
-        "movie-top_rated.json",
-        "tv-top_rated.json",
+        "/mocks/movie-top_rated.json",
+        "/mocks/tv-top_rated.json",
         "/mocks/discover-movie.json",
         "/mocks/discover-tv.json"
       ];
