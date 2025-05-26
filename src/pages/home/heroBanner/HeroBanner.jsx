@@ -16,7 +16,7 @@ const HeroBanner = () => {
 
   useEffect(() => {
     const TMDB_IMAGE_BASE = url?.backdrop || "https://image.tmdb.org/t/p/original";
-    const bg = TMDB_IMAGE_BASE ? TMDB_IMAGE_BASE + data?.results[Math.floor(Math.random() * 20)]?.backdrop_path : TMDB_IMAGE_BASE + data?.results[Math.floor(Math.random() * 20)]?.backdrop_path;
+    const bg = TMDB_IMAGE_BASE + data?.results[Math.floor(Math.random() * 20)]?.backdrop_path;
     setBackground(bg);
   }, [data,url]);
 
