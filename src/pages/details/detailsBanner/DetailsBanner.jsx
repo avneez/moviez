@@ -26,7 +26,6 @@ const DetailsBanner = ({ video, crew }) => {
         const minutes = totalMinutes % 60;
         return `${hours}h${minutes > 0 ? ` ${minutes}m` : ""}`;
     };
-
     return (
         <div className="detailsBanner">
             {!loading ? (
@@ -34,19 +33,18 @@ const DetailsBanner = ({ video, crew }) => {
                     {!!data && (
                         <>
                             <div className="backdrop-img">
-                                <Img src={url.backdrop + data.backdrop_path} />
+                                { url.backdrop && data.backdrop_path ? (<Img src={url.backdrop + data.backdrop_path} />)
+                                : <Img src={`https://image.tmdb.org/t/p/original${data.backdrop_path}`} />
+                            }
                             </div>
                             <div className="opacity-layer"></div>
                             <ContentWrapper>
                                 <div className="content">
                                     <div className="left">
-                                        {data.poster_path ? (
-                                            <Img className="posterImg"
-                                                src={url.backdrop + data.backdrop_path} />
-
+                                        {url.backdrop && data.backdrop_path ? (
+                                            <Img className="posterImg" src={url.backdrop + data.poster_path} />
                                         ) : (
-                                            <Img className="posterImg"
-                                                src={PosterFallback} />
+                                            <Img className="posterImg" src={`https://image.tmdb.org/t/p/original${data.poster_path}`} />
                                         )}
                                     </div>
                                     <div className="right">
@@ -58,7 +56,7 @@ const DetailsBanner = ({ video, crew }) => {
                                         </div>
 
                                         <Genres genresData={_genres} />
-                                        <div className="row">
+                                        {/* <div className="row">
                                             <CircleRating
                                                 rating={data.vote_average.toFixed(1)}
                                             />
@@ -68,7 +66,7 @@ const DetailsBanner = ({ video, crew }) => {
                                                 <PlayIcon />
                                                 <span className="text">Watch Trailer</span>
                                             </div>
-                                        </div>
+                                        </div> */}
                                         <div className="overview">
                                             <div className="heading">
                                                 Overview

@@ -22,14 +22,12 @@ const Carousel = ({ data, loading, endpoint }) => {
 
   const navigation = (dir) => {
     const container =  carouselContainer.current;
-    console.log('container',container,'cc',carouselContainer);
     const scrollAmount = dir === "left" ? container.scrollLeft - (container.offsetWidth + 20 ) : container.scrollLeft + (container.offsetWidth + 20);
-    console.log('scrollamount',scrollAmount)
     container.scrollTo({
       left: scrollAmount,
       behavior: "smooth",
     });
-  } 
+  }
 
   const skItem = () =>{
     return (
@@ -58,7 +56,8 @@ const Carousel = ({ data, loading, endpoint }) => {
         {!loading ? (
           <div className="carouselItems" ref={carouselContainer}>
             {data?.map((item) => {
-              const posterUrl = url.poster + item.poster_path || PosterFallback;
+              const posterBaseUrl = url.poster || "https://image.tmdb.org/t/p/original";
+              const posterUrl = posterBaseUrl + item.poster_path;
               return (
                 <div key={item.id} className="carouselItem" onClick={()=>navigate(`/${item.media_type || endpoint}/${item.id}`)}>
                   <div className="posterBlock">

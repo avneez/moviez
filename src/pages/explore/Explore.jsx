@@ -21,7 +21,7 @@ const sortbyData = [
         label: "Release Date Descending",
     },
     { value: "primary_release_date.asc", label: "Release Date Ascending" },
-    { value: "original_title.asc", label: "Title (A-Z)" },
+    // { value: "original_title.asc", label: "Title (A-Z)" },
 ];
 
 const Explore = () => {
@@ -30,6 +30,7 @@ const Explore = () => {
     const [loading, setLoading] = useState(false);
     const [genre, setGenre] = useState(null);
     const [sortby, setSortby] = useState(null);
+    const [fallbackData, setFallbackData] = useState(false)
     const { mediaType } = useParams();
 
     const { data: genresData } = useFetch(`/genre/${mediaType}/list`);
@@ -41,6 +42,8 @@ const Explore = () => {
             setPageNum((prev) => prev + 1);
             setLoading(false);
         });
+        const isFallbackData = localStorage.getItem('fallbackData')==='true'
+        setFallbackData(isFallbackData)
     };
 
     const fetchNextPageData = () => {
@@ -51,7 +54,7 @@ const Explore = () => {
             if (data?.results) {
                 setData({
                     ...data,
-                    results: [...data?.results, ...res.results],
+                    results: [...data.results, ...res.results],
                 });
             } else {
                 setData(res);
@@ -103,7 +106,7 @@ const Explore = () => {
                             ? "Explore TV Shows"
                             : "Explore Movies"}
                     </div>
-                    <div className="filters">
+                    {!fallbackData && <div className="filters">
                         <Select
                             isMulti
                             name="genres"
@@ -127,7 +130,7 @@ const Explore = () => {
                             className="react-select-container sortbyDD"
                             classNamePrefix="react-select"
                         />
-                    </div>
+                    </div>}
                 </div>
                 {loading && <Spinner initial={true} />}
                 {!loading && (

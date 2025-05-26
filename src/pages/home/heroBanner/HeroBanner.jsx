@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import "./style.scss";
 import { useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
@@ -15,14 +15,14 @@ const HeroBanner = () => {
   const { data, loading } = useFetch("/movie/upcoming");
 
   useEffect(() => {
-    const bg =
-      url.backdrop +
-      data?.results?.[Math.floor(Math.random() * 20)]?.backdrop_path;
+    const TMDB_IMAGE_BASE = url?.backdrop;
+    const bg = TMDB_IMAGE_BASE ? TMDB_IMAGE_BASE + data?.results[Math.floor(Math.random() * 20)]?.backdrop_path : data?.results[Math.floor(Math.random() * 20)]?.backdrop_path;
+
     setBackground(bg);
   }, [data,url]);
 
   const searchQueryHandler = (e) => {
-    if (e.key === "Enter" && query.length > 0) {
+    if ((e.key === "Enter"  || e.type === "click") && query.length > 0) {
       navigate(`/search/${query}`);
     }
   };
@@ -31,7 +31,12 @@ const HeroBanner = () => {
     <div className="heroBanner">
       {!loading && (
         <div className="backdrop-img">
-          <Img src={background} />
+          <Img
+            src={background}
+            onError={(e) => {
+              e.target.src = "/fallback.jpg";
+            }}
+          />
         </div>
       )}
 
@@ -48,9 +53,9 @@ const HeroBanner = () => {
               type="text"
               placeholder="Search"
               onChange={(e) => setQuery(e.target.value)}
-              onKeyUp={searchQueryHandler}
+              onKeyUp={(e)=>searchQueryHandler(e)}
             />
-            <button onClick={() => console.log("search")}>Search</button>
+            <button onClick={(e)=>searchQueryHandler(e)}>Search</button>
           </div>
         </div>
       </ContentWrapper>

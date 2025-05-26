@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import InfiniteScroll from "react-infinite-scroll-component";
 import "./style.scss";
-import { fetchDataFromApi } from "../../utils/api";
+import { fetchDataFromApi, fetchDataFromAltApi } from "../../utils/api";
 import ContentWrapper from "../../components/contentWrapper/ContentWrapper";
 import MovieCard from "../../components/movieCard/MovieCard";
 import Spinner from "../../components/spinner/Spinner";
@@ -15,18 +15,26 @@ const SearchResult = () => {
   const [pageNum, setPageNum] = useState(1);
   const [loading, setLoading] = useState(false);
   const { query } = useParams();
+  const [altApi, setAltApi] = useState(false)
 
 
-
-  const fetchInitialData = () => {
+  const fetchInitialData = async () => {
     setLoading(true);
-    fetchDataFromApi(`/search/multi?query=${query}&page=${pageNum}`).then(
-      (res) => {
-        setData(res);
-        setPageNum((prev) => prev + 1);
-        setLoading(false);
-      }
-    );
+    try {
+      const res = await fetchDataFromApi(
+        `/search/multi?query=${query}&page=${pageNum}`
+      );
+      setData(res);
+      setPageNum((prev) => prev + 1);
+    } catch (err) {
+      // If TMDB fails or times out
+      const fallback = await fetchDataFromAltApi(query);
+      setData(fallback);
+      setAltApi(true)
+    } finally {
+      setLoading(false);
+      console.log(data, 'data**')
+    }
   };
 
   const fetchNextPageData = () => {
@@ -35,7 +43,7 @@ const SearchResult = () => {
         if (data?.results) {
           setData({
             ...data,
-            results: [...data?.results, ...res.results],
+            results: [...data.results, ...res.results],
           });
         } else {
           setData(res);
@@ -52,22 +60,22 @@ const SearchResult = () => {
 
   return (
     <div className="searchResultsPage">
-      {loading && <Spinner initial={true} />}
-      {!loading && (
+      {(!data?.total_results || loading) && <Spinner initial={true} />}
+      {(data?.total_results > 0 || !loading) && (
         <ContentWrapper>
           {data?.results?.length > 0 ? (
             <>
               <div className="pageTitle">
-                {`Search ${data?.total_results > 1
+                {data?.total_results > 0 ? `Search ${data?.total_results > 1
                     ? "results"
                     : "result"
-                  } of '${query}'`}
+                  } of '${query}'` : 'Data not available at this moment.'}
               </div>
               <InfiniteScroll
                 className="content"
                 dataLength={data?.results?.length || []}
                 next={fetchNextPageData}
-                hasMore={pageNum <= data?.total_pages}
+                hasMore={!altApi ? pageNum <= data?.total_pages : false}
                 loader={<Spinner />}
               >
                 {data?.results.map((item, index) => {

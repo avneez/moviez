@@ -1,0 +1,418 @@
+{
+    "page": 1,
+    "results": [
+        {
+            "backdrop_path": "/aESb695wTIF0tB7RTGRebnYrjFK.jpg",
+            "id": 1098006,
+            "title": "Fountain of Youth",
+            "original_title": "Fountain of Youth",
+            "overview": "A treasure-hunting mastermind assembles a team for a life-changing adventure. But to outwit and outrun threats at every turn, he'll need someone even smarter than he is: his estranged sister.",
+            "poster_path": "/4iWjGghUj2uyHo2Hyw8NFBvsNGm.jpg",
+            "media_type": "movie",
+            "adult": false,
+            "original_language": "en",
+            "genre_ids": [
+                12,
+                14,
+                9648
+            ],
+            "popularity": 221.1354,
+            "release_date": "2025-05-19",
+            "video": false,
+            "vote_average": 6.6,
+            "vote_count": 152
+        },
+        {
+            "backdrop_path": "/icFWIk1KfkWLZnugZAJEDauNZ94.jpg",
+            "id": 1232546,
+            "title": "Until Dawn",
+            "original_title": "Until Dawn",
+            "overview": "One year after her sister Melanie mysteriously disappeared, Clover and her friends head into the remote valley where she vanished in search of answers. Exploring an abandoned visitor center, they find themselves stalked by a masked killer and horrifically murdered one by one...only to wake up and find themselves back at the beginning of the same evening.",
+            "poster_path": "/juA4IWO52Fecx8lhAsxmDgy3M3.jpg",
+            "media_type": "movie",
+            "adult": false,
+            "original_language": "en",
+            "genre_ids": [
+                27,
+                9648
+            ],
+            "popularity": 287.8015,
+            "release_date": "2025-04-23",
+            "video": false,
+            "vote_average": 6.306,
+            "vote_count": 324
+        },
+        {
+            "backdrop_path": "/qspghhpOyaBGgZDJoCbV2o9WNMU.jpg",
+            "id": 1001414,
+            "title": "Fear Street: Prom Queen",
+            "original_title": "Fear Street: Prom Queen",
+            "overview": "Who will be voted queen at Shadyside High's 1988 prom? For underdog Lori, competition is cutthroat even before someone starts killing off the candidates.",
+            "poster_path": "/gevScWYkF8l5i9NjFSXo8HfPNyy.jpg",
+            "media_type": "movie",
+            "adult": false,
+            "original_language": "en",
+            "genre_ids": [
+                27,
+                9648
+            ],
+            "popularity": 215.8355,
+            "release_date": "2025-05-23",
+            "video": false,
+            "vote_average": 5.343,
+            "vote_count": 115
+        },
+        {
+            "backdrop_path": "/1p5aI299YBnqrEEvVGJERk2MXXb.jpg",
+            "id": 575265,
+            "title": "Mission: Impossible - The Final Reckoning",
+            "original_title": "Mission: Impossible - The Final Reckoning",
+            "overview": "Ethan Hunt and team continue their search for the terrifying AI known as the Entity — which has infiltrated intelligence networks all over the globe — with the world's governments and a mysterious ghost from Hunt's past on their trail. Joined by new allies and armed with the means to shut the Entity down for good, Hunt is in a race against time to prevent the world as we know it from changing forever.",
+            "poster_path": "/z53D72EAOxGRqdr7KXXWp9dJiDe.jpg",
+            "media_type": "movie",
+            "adult": false,
+            "original_language": "en",
+            "genre_ids": [
+                28,
+                12,
+                53
+            ],
+            "popularity": 325.1914,
+            "release_date": "2025-05-17",
+            "video": false,
+            "vote_average": 7.021,
+            "vote_count": 283
+        },
+        {
+            "backdrop_path": "/7Zx3wDG5bBtcfk8lcnCWDOLM4Y4.jpg",
+            "id": 552524,
+            "title": "Lilo & Stitch",
+            "original_title": "Lilo & Stitch",
+            "overview": "The wildly funny and touching story of a lonely Hawaiian girl and the fugitive alien who helps to mend her broken family.",
+            "poster_path": "/tUae3mefrDVTgm5mRzqWnZK6fOP.jpg",
+            "media_type": "movie",
+            "adult": false,
+            "original_language": "en",
+            "genre_ids": [
+                10751,
+                35,
+                878
+            ],
+            "popularity": 508.3123,
+            "release_date": "2025-05-17",
+            "video": false,
+            "vote_average": 7.091,
+            "vote_count": 154
+        },
+        {
+            "backdrop_path": "/uIpJPDNFoeX0TVml9smPrs9KUVx.jpg",
+            "id": 574475,
+            "title": "Final Destination Bloodlines",
+            "original_title": "Final Destination Bloodlines",
+            "overview": "Plagued by a violent recurring nightmare, college student Stefanie heads home to track down the one person who might be able to break the cycle and save her family from the grisly demise that inevitably awaits them all.",
+            "poster_path": "/6WxhEvFsauuACfv8HyoVX6mZKFj.jpg",
+            "media_type": "movie",
+            "adult": false,
+            "original_language": "en",
+            "genre_ids": [
+                27,
+                9648
+            ],
+            "popularity": 535.0346,
+            "release_date": "2025-05-09",
+            "video": false,
+            "vote_average": 7.077,
+            "vote_count": 405
+        },
+        {
+            "backdrop_path": "/2Nti3gYAX513wvhp8IiLL6ZDyOm.jpg",
+            "id": 950387,
+            "title": "A Minecraft Movie",
+            "original_title": "A Minecraft Movie",
+            "overview": "Four misfits find themselves struggling with ordinary problems when they are suddenly pulled through a mysterious portal into the Overworld: a bizarre, cubic wonderland that thrives on imagination. To get back home, they'll have to master this world while embarking on a magical quest with an unexpected, expert crafter, Steve.",
+            "poster_path": "/yFHHfHcUgGAxziP1C3lLt0q2T4s.jpg",
+            "media_type": "movie",
+            "adult": false,
+            "original_language": "en",
+            "genre_ids": [
+                10751,
+                35,
+                12,
+                14
+            ],
+            "popularity": 694.9673,
+            "release_date": "2025-03-31",
+            "video": false,
+            "vote_average": 6.522,
+            "vote_count": 1432
+        },
+        {
+            "backdrop_path": "/rthMuZfFv4fqEU4JVbgSW9wQ8rs.jpg",
+            "id": 986056,
+            "title": "Thunderbolts*",
+            "original_title": "Thunderbolts*",
+            "overview": "After finding themselves ensnared in a death trap, seven disillusioned castoffs must embark on a dangerous mission that will force them to confront the darkest corners of their pasts.",
+            "poster_path": "/m9EtP1Yrzv6v7dMaC9mRaGhd1um.jpg",
+            "media_type": "movie",
+            "adult": false,
+            "original_language": "en",
+            "genre_ids": [
+                28,
+                878,
+                12
+            ],
+            "popularity": 167.4446,
+            "release_date": "2025-04-30",
+            "video": false,
+            "vote_average": 7.466,
+            "vote_count": 983
+        },
+        {
+            "backdrop_path": "/nAxGnGHOsfzufThz20zgmRwKur3.jpg",
+            "id": 1233413,
+            "title": "Sinners",
+            "original_title": "Sinners",
+            "overview": "Trying to leave their troubled lives behind, twin brothers return to their hometown to start again, only to discover that an even greater evil is waiting to welcome them back.",
+            "poster_path": "/jYfMTSiFFK7ffbY2lay4zyvTkEk.jpg",
+            "media_type": "movie",
+            "adult": false,
+            "original_language": "en",
+            "genre_ids": [
+                27,
+                53
+            ],
+            "popularity": 111.2267,
+            "release_date": "2025-04-16",
+            "video": false,
+            "vote_average": 7.6,
+            "vote_count": 770
+        },
+        {
+            "backdrop_path": "/8eifdha9GQeZAkexgtD45546XKx.jpg",
+            "id": 822119,
+            "title": "Captain America: Brave New World",
+            "original_title": "Captain America: Brave New World",
+            "overview": "After meeting with newly elected U.S. President Thaddeus Ross, Sam finds himself in the middle of an international incident. He must discover the reason behind a nefarious global plot before the true mastermind has the entire world seeing red.",
+            "poster_path": "/pzIddUEMWhWzfvLI3TwxUG2wGoi.jpg",
+            "media_type": "movie",
+            "adult": false,
+            "original_language": "en",
+            "genre_ids": [
+                28,
+                53,
+                878
+            ],
+            "popularity": 134.5154,
+            "release_date": "2025-02-12",
+            "video": false,
+            "vote_average": 6.106,
+            "vote_count": 1900
+        },
+        {
+            "backdrop_path": "/dJ1JpHuTCRxtGpRq8bQzk2jBqTi.jpg",
+            "id": 896536,
+            "title": "The Legend of Ochi",
+            "original_title": "The Legend of Ochi",
+            "overview": "In a remote village on the island of Carpathia, a shy farm girl named Yuri is raised to fear an elusive animal species known as ochi. But when Yuri discovers a wounded baby ochi has been left behind, she escapes on a quest to bring him home.",
+            "poster_path": "/wVujUVvY4qvKARAslItQ4ARKqtz.jpg",
+            "media_type": "movie",
+            "adult": false,
+            "original_language": "en",
+            "genre_ids": [
+                14,
+                12,
+                10751
+            ],
+            "popularity": 240.693,
+            "release_date": "2025-04-18",
+            "video": false,
+            "vote_average": 6.129,
+            "vote_count": 70
+        },
+        {
+            "backdrop_path": "/pkZ8SaIQwjBuS1fcJJE7Are7IrL.jpg",
+            "id": 696506,
+            "title": "Mickey 17",
+            "original_title": "Mickey 17",
+            "overview": "Unlikely hero Mickey Barnes finds himself in the extraordinary circumstance of working for an employer who demands the ultimate commitment to the job… to die, for a living.",
+            "poster_path": "/edKpE9B5qN3e559OuMCLZdW1iBZ.jpg",
+            "media_type": "movie",
+            "adult": false,
+            "original_language": "en",
+            "genre_ids": [
+                878,
+                35,
+                12
+            ],
+            "popularity": 50.4762,
+            "release_date": "2025-02-28",
+            "video": false,
+            "vote_average": 6.905,
+            "vote_count": 2034
+        },
+        {
+            "backdrop_path": "/fTrQsdMS2MUw00RnzH0r3JWHhts.jpg",
+            "id": 1197306,
+            "title": "A Working Man",
+            "original_title": "A Working Man",
+            "overview": "Levon Cade left behind a decorated military career in the black ops to live a simple life working construction. But when his boss's daughter, who is like family to him, is taken by human traffickers, his search to bring her home uncovers a world of corruption far greater than he ever could have imagined.",
+            "poster_path": "/6FRFIogh3zFnVWn7Z6zcYnIbRcX.jpg",
+            "media_type": "movie",
+            "adult": false,
+            "original_language": "en",
+            "genre_ids": [
+                28,
+                80,
+                53
+            ],
+            "popularity": 314.9315,
+            "release_date": "2025-03-26",
+            "video": false,
+            "vote_average": 6.67,
+            "vote_count": 981
+        },
+        {
+            "backdrop_path": "/TFTfzrkX8L7bAKUcch6qLmjpLu.jpg",
+            "id": 575264,
+            "title": "Mission: Impossible - Dead Reckoning Part One",
+            "original_title": "Mission: Impossible - Dead Reckoning Part One",
+            "overview": "Ethan Hunt and his IMF team embark on their most dangerous mission yet: To track down a terrifying new weapon that threatens all of humanity before it falls into the wrong hands. With control of the future and the world's fate at stake and dark forces from Ethan's past closing in, a deadly race around the globe begins. Confronted by a mysterious, all-powerful enemy, Ethan must consider that nothing can matter more than his mission—not even the lives of those he cares about most.",
+            "poster_path": "/NNxYkU70HPurnNCSiCjYAmacwm.jpg",
+            "media_type": "movie",
+            "adult": false,
+            "original_language": "en",
+            "genre_ids": [
+                28,
+                12,
+                53
+            ],
+            "popularity": 82.9695,
+            "release_date": "2023-07-08",
+            "video": false,
+            "vote_average": 7.535,
+            "vote_count": 4268
+        },
+        {
+            "backdrop_path": "/xThuEoirx0vXismkVbnMQqkMkHK.jpg",
+            "id": 849509,
+            "title": "Jade",
+            "original_title": "Jade",
+            "overview": "Jade presents the story of a woman who comes between a powerful businessman and a gang leader in their search for a hard drive that could damage the operations of Interpol. Despite grieving for the brother she accidentally killed, the woman is required to use her unique set of skills to retrieve the drive and protect her brother's unborn child being carried by another woman.",
+            "poster_path": "/2pqAJhim9JDYoZhIqVvcgSpCXGx.jpg",
+            "media_type": "movie",
+            "adult": false,
+            "original_language": "en",
+            "genre_ids": [
+                28,
+                53
+            ],
+            "popularity": 2.7899,
+            "release_date": "2024-05-05",
+            "video": false,
+            "vote_average": 4.9,
+            "vote_count": 14
+        },
+        {
+            "backdrop_path": "/l2wRY9DFF9gRhclePCZ1YtoVVMm.jpg",
+            "id": 1257960,
+            "title": "Sikandar",
+            "original_title": "सिकंदर",
+            "overview": "A tragic accident pushes the powerful Sikandar to protect the less fortunate by standing up to corruption and greed — using any means necessary.",
+            "poster_path": "/41s42CRXafa3OuRGvCtfYPEBmse.jpg",
+            "media_type": "movie",
+            "adult": false,
+            "original_language": "hi",
+            "genre_ids": [
+                28,
+                18
+            ],
+            "popularity": 5.3133,
+            "release_date": "2025-03-29",
+            "video": false,
+            "vote_average": 4.6,
+            "vote_count": 18
+        },
+        {
+            "backdrop_path": "/tyfO9jHgkhypUFizRVYD0bytPjP.jpg",
+            "id": 447273,
+            "title": "Snow White",
+            "original_title": "Snow White",
+            "overview": "Following the benevolent King's disappearance, the Evil Queen dominated the once fair land with a cruel streak. Princess Snow White flees the castle when the Queen, in her jealousy over Snow White's inner beauty, tries to kill her. Deep into the dark woods, she stumbles upon seven magical dwarves and a young bandit named Jonathan. Together, they strive to survive the Queen's relentless pursuit and aspire to take back the kingdom.",
+            "poster_path": "/oLxWocqheC8XbXbxqJ3x422j9PW.jpg",
+            "media_type": "movie",
+            "adult": false,
+            "original_language": "en",
+            "genre_ids": [
+                10751,
+                14
+            ],
+            "popularity": 268.7116,
+            "release_date": "2025-03-12",
+            "video": false,
+            "vote_average": 4.313,
+            "vote_count": 930
+        },
+        {
+            "backdrop_path": "/6KDLAU9OnA0FhXP1av8jqavCGG9.jpg",
+            "id": 9532,
+            "title": "Final Destination",
+            "original_title": "Final Destination",
+            "overview": "After a teenager has a terrifying vision of him and his friends dying in a plane crash, he prevents the accident only to have Death hunt them down, one by one.",
+            "poster_path": "/1mXhlQMnlfvJ2frxTjZSQNnA9Vp.jpg",
+            "media_type": "movie",
+            "adult": false,
+            "original_language": "en",
+            "genre_ids": [
+                27
+            ],
+            "popularity": 93.5952,
+            "release_date": "2000-03-17",
+            "video": false,
+            "vote_average": 6.618,
+            "vote_count": 5991
+        },
+        {
+            "backdrop_path": "/sra8XnL96OyLHENcglmZJg6HA8z.jpg",
+            "id": 954,
+            "title": "Mission: Impossible",
+            "original_title": "Mission: Impossible",
+            "overview": "When Ethan Hunt, the leader of a crack espionage team whose perilous operation has gone awry with no explanation, discovers that a mole has penetrated the CIA, he's surprised to learn that he's the prime suspect. To clear his name, Hunt now must ferret out the real double agent and, in the process, even the score.",
+            "poster_path": "/l5uxY5m5OInWpcExIpKG6AR3rgL.jpg",
+            "media_type": "movie",
+            "adult": false,
+            "original_language": "en",
+            "genre_ids": [
+                12,
+                28,
+                53
+            ],
+            "popularity": 52.6269,
+            "release_date": "1996-05-22",
+            "video": false,
+            "vote_average": 7.0,
+            "vote_count": 9241
+        },
+        {
+            "backdrop_path": "/vu5Y8qFqlzcboDbbZIMTAgj0KLb.jpg",
+            "id": 591273,
+            "title": "Fear Street: 1994",
+            "original_title": "Fear Street: 1994",
+            "overview": "After a series of brutal slayings, a teen and her friends take on an evil force that's plagued their notorious town for centuries.",
+            "poster_path": "/9J9Wy39ZjrVmfk7yMkulpcI5sy0.jpg",
+            "media_type": "movie",
+            "adult": false,
+            "original_language": "en",
+            "genre_ids": [
+                27,
+                9648
+            ],
+            "popularity": 10.9993,
+            "release_date": "2021-06-28",
+            "video": false,
+            "vote_average": 6.698,
+            "vote_count": 2388
+        }
+    ],
+    "total_pages": 500,
+    "total_results": 10000
+}
